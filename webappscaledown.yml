@@ -1,0 +1,10 @@
+- name: Compose Scale Up
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Scale Down
+      community.docker.docker_compose:
+        project_src: /home/beholder/webapp
+        state: present
+        scale:
+          app: 1
