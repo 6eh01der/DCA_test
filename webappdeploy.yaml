@@ -1,8 +1,0 @@
-- name: Compose Up
-  hosts: localhost
-  gather_facts: false
-  tasks:
-    - name: Up
-      community.docker.docker_compose:
-        project_src: /home/beholder/webapp
-        state: present
