@@ -1,4 +1,4 @@
-- name: Compose Scale Up
+- name: Compose Scale Down
   hosts: localhost
   gather_facts: false
   tasks:
